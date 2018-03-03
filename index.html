@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>罗云强个人简历</title>
     <link rel="stylesheet" href="./static/css/resume.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
 </head>
 
 <body>
@@ -17,26 +18,46 @@
             </div>
         </header>
         <!--侧边锚点-->
-        <div style="text-align:center; padding:15px;position:fixed; left:5%; top:30%; width:15%;height:40%;background-color:#fff;box-shadow: 5px 5px 5px #E7E5E5;border: 1px solid #E7E5E5">
+        <div style="text-align:center; padding:15px;position:fixed; left:5%; top:30%; width:15%;min-width:250px;height:50%;background-color:#fff;box-shadow: 5px 5px 5px #E7E5E5;border: 1px solid #E7E5E5">
             <div class="col-3 peasonal" style="width: 100%">
                 <img style="margin:0 auto" class="peasonal-image" src="./static/image/peason.png" alt="">
             </div>
-            <div style="width: 100%;text-align: center">
+            <div style="width: 100%;text-align: center;line-height: 32px">
                 <h3>罗 云 强</h3>
                 <span>JAVA开发 | 成都</span>
             </div>
-            <a href="#" class="icon">
-                <img src="./static/image/giteeICON.png" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="./static/image/zhihuICON.png" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="./static/image/weiboICON.png" alt="">
-            </a>
-            <a href="#" class="icon">
-                <img src="./static/image/oscICON.png" alt="">
-            </a>
+            <table class="layui-table" lay-skin="line">
+                <colgroup>
+                    <col width="50">
+                    <col width="150">
+                </colgroup>
+                <tbody style="text-align: left">
+                <tr>
+                    <td>手机</td>
+                    <td>13438379796</td>
+                </tr>
+                <tr>
+                    <td>邮箱</td>
+                    <td>mail@lyq3.com</td>
+                </tr>
+                <tr>
+                    <td>Q Q</td>
+                    <td>99190092</td>
+                </tr>
+                <tr>
+                    <td>博客</td>
+                    <td><a target="_blank" href="http://blog.lyq3.com" style="color: blue">blog.lyq3.com</a></td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a target="_blank" href="https://github.com/lyq3" style="color: blue">github.com/lyq3</a></td>
+                </tr>
+                <tr>
+                    <td>业余网站</td>
+                    <td><a target="_blank" href="http://ichrome.top" style="color: blue">ichrome.top</a></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
         <main>
             <div class="information-all">
@@ -204,6 +225,29 @@
             <p class="footer">© lyq3.com</p>
         </footer>
     </div>
+
+<script  src="./layui/layui.all.js"></script>
+    <script>
+        layui.use(['util', 'laydate', 'layer'], function() {
+            var util = layui.util
+                , laydate = layui.laydate
+                , layer = layui.layer;
+            //固定块
+            util.fixbar({
+                bar1: true
+                , bar2: true
+                , css: {right: 50, bottom: 100}
+                , bgcolor: '#393D49'
+                , click: function (type) {
+                    if (type === 'bar1') {
+                        layer.msg('icon是可以随便换的')
+                    } else if (type === 'bar2') {
+                        layer.msg('两个bar都可以设定是否开启')
+                    }
+                }
+            });
+        });
+            </script>
 </body>
 
 </html>
