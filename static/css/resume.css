@@ -231,6 +231,7 @@ section .title.about-me::before {
 }
 .project-detail .link-to {
     position: relative;
+    cursor:pointer;
 }
 .project-detail .link-to:hover .shadow {
     position: absolute;
