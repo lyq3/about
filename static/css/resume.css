@@ -53,11 +53,11 @@ html p {
     width: 65%;
 }
 .container {
-    width: 60%;
+    width: 1000px;
     /*margin: 0 auto;*/
     /*margin-left: 25%;*/
     float: right;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 .hide {
     display: none;
