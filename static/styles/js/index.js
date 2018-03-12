@@ -70,14 +70,16 @@ layui.use(['util', 'laydate', 'layer'], function() {
     //查看项目详情
 
     $(".link-to").click(function(){
+        var local_data = $(this).attr('local_data');
+        var local_title = $(this).attr('local_title');
         layer.open({
             type: 2,
-            title: '项目详情',
+            title: local_title,
             shadeClose: true,
             shade: [0.3, '#434752'],
             maxmin: true, //开启最大化最小化按钮
             area: ['893px', '600px'],
-            content: './page/ssglpt.html',
+            content: './page/'+local_data+'.html',
             scrollbar: false
         });
     })
