@@ -61,6 +61,7 @@ layui.use(['util', 'laydate', 'layer'], function() {
                     ,shade: 0 //不显示遮罩
                     ,area: ['270px','584px']
                     ,offset: 'l'
+                    ,title: '联系方式'
                 });
             }
         }
