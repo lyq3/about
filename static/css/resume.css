@@ -54,10 +54,10 @@ html p {
 }
 .container {
     width: 1000px;
-    /*margin: 0 auto;*/
+    margin: 0 auto;
     /*margin-left: 25%;*/
-    float: right;
-    margin-right: 15%;
+    /*float: right;*/
+    /*margin-right: 15%;*/
 }
 .hide {
     display: none;
