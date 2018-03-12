@@ -74,7 +74,7 @@ layui.use(['util', 'laydate', 'layer'], function() {
             type: 2,
             title: '项目详情',
             shadeClose: true,
-            shade: false,
+            shade: [0.3, '#434752'],
             maxmin: true, //开启最大化最小化按钮
             area: ['893px', '600px'],
             content: './page/ssglpt.html'
