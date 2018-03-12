@@ -77,7 +77,8 @@ layui.use(['util', 'laydate', 'layer'], function() {
             shade: [0.3, '#434752'],
             maxmin: true, //开启最大化最小化按钮
             area: ['893px', '600px'],
-            content: './page/ssglpt.html'
+            content: './page/ssglpt.html',
+            scrollbar: false
         });
     })
 
