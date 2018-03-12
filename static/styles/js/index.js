@@ -5,12 +5,12 @@ layui.use(['util', 'laydate', 'layer'], function() {
         , layer = layui.layer;
     //固定块
     util.fixbar({
-        bar1: true
-        , bar2: true
+        bar1: '点'
+        , bar2: '我'
         , css: {right: 50, bottom: 100}
         , bgcolor: '#393D49'
         , click: function (type) {
-            if (type === 'bar1') {
+            if (type === 'bar1' || type === 'bar2') {
                 layer.closeAll();
                 layer.open({
                     type: 1
@@ -62,8 +62,6 @@ layui.use(['util', 'laydate', 'layer'], function() {
                     ,area: ['270px','584px']
                     ,offset: 'l'
                 });
-            } else if (type === 'bar2') {
-                layer.msg('两个bar都可以设定是否开启')
             }
         }
     });
