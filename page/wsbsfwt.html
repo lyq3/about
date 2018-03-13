@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>税收管理平台详情页面</title>
+    <title>网上办税服务厅详情页面</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 <body style="margin: 10px">
@@ -12,11 +12,9 @@
         <div class="layui-timeline-content layui-text">
             <h2 class="layui-timeline-title">项目介绍</h2>
             <p>
-                <ul><li>税收管理平台：</li></ul>
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;该项目是四川省国家税务局为统计和监控全省税收而开发，包括各税种的统计、疑点数据监控、各地市州数据上报汇总等功能。
-                <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统采用传统的SSM框架开发，前端采用EasyUI + Ztree + layer 等插件，兼容IE8
-            <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;统计数据量上亿，做聚合运算查询时间缓慢，所以本系统附带还开发有一套数据处理系统将数据进行固化提高数据查询速度，并牺牲了查询的及时性(后期还将接入大数据平台) 。
-                数据处理程序采用的是Spring的任务调度模块（也就是轻量级的Quartz），并使用开源项目<a target="_blank" href="https://github.com/xuxueli/xxl-job/"> XXL-JOB</a>进行任务调度。
+                <ul><li>网上办税服务厅：</li></ul>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;按照四川省国税局对网上办税平台开发的基本要求，本系统包括当前税务机关受理涉税事项的主要功能、辅助功能和拓展功能三部分，主要功能包括实现网上登记、纳税申报、发票管理、文书管理、行政救济等基本功能；辅助功能即查询功能，涵盖涉税事项办理状态及结果查询，税收政策及咨询结果查询，税务局通知及提醒以及后期新增的查询；拓展功能包括集成网上发票认证和网络报税等功能。通过网上业务功能的开发整合，为纳税人逐步实现涉税业务一网通办的目标，节约纳税人办税时间，提升征纳双方办税效率，促进税务机关征管与服务职能规范化和标准化目标的实现，和谐征纳关系，提升纳税遵从度。
+                <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统后端采用Spring + SpringMVC + Mybatis + Shiro + Dubbo + Redis ，前端采用Jquery + jQuery Validate + layer 等插件
             </p>
         </div>
     </li>
@@ -24,9 +22,7 @@
         <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
         <div class="layui-timeline-content layui-text">
             <h2 class="layui-timeline-title">项目截图</h2>
-            <img style="width: 98%" src="../static/image/project/lqgs5.png"/>
-            <img style="width: 98%" src="../static/image/project/lqgs6.png"/>
-            <img style="width: 98%" src="../static/image/project/lqgs7.png"/>
+            <a target="_blank" href="http://wsbs.sc-n-tax.gov.cn/index.html">进入网上办税服务厅查看</a>
         </div>
     </li>
     <li class="layui-timeline-item">
@@ -34,16 +30,8 @@
         <div class="layui-timeline-content layui-text">
             <h2 class="layui-timeline-title">项目职责</h2>
             <p>
-                项目一期工程负责编码，二期负责项目需求分析，项目搭建，登录模块和处理程序的编写工作。
-            </p>
-        </div>
-    </li>
-    <li class="layui-timeline-item">
-        <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-        <div class="layui-timeline-content layui-text">
-            <h2 class="layui-timeline-title">其他</h2>
-            <p>
-                项目中遇到的困难：由于该项目是进入公司接收的第一个项目，困难大都集中在业务理解度尚浅，还有就是数据量庞大，统计聚合慢，至今仍没有满意的解决方案。
+                负责重点税源直报和重点税源预报等模块的开发（项目组支援）。对首页进行前后端分离改造以提高页面访问速度(技术支持，不参与编码)。
+
             </p>
         </div>
     </li>
