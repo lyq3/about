@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>税收管理平台详情页面</title>
+    <title>橘子平台地税详情页面</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 <body style="margin: 10px">
@@ -12,13 +12,12 @@
         <div class="layui-timeline-content layui-text">
             <h2 class="layui-timeline-title">项目介绍</h2>
             <p>
-                <ul><li>税收管理平台：</li></ul>
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;该项目是四川省国家税务局为统计和监控全省税收而开发，包括各税种的统计、疑点数据监控、各地市州数据上报汇总等功能。
-                <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统采用传统的SSM框架开发，前端采用EasyUI + Ztree + layer 等插件，兼容IE8
+                <ul><li>地税网厅：</li></ul>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;为响应国家国地税联合办税，减少纳税人办理流程，公司与地税合作提供地税的业务办理功能。
+                <br/>&nbsp;&nbsp;&nbsp;&nbsp;由于地税系统是独立的，但是会集成到办税软件上，所以我们设计成直接输出页面而不是提供API接口，系统采用SpringBoot +Mybatis-Plus + thymeleaf(模板引擎)+WebService
             <br/>项目采用统一异常处理(@ControllerAdvice)，使用自定义注解和Spring AOP 配合进行日志记录。并使用自定义异常将业务异常进行封装，使用统一类返回统一的JSON数据(RESTful风格)
 
-            <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;统计数据量上亿，做聚合运算查询时间缓慢，所以本系统附带还开发有一套数据处理系统将数据进行固化提高数据查询速度，并牺牲了查询的及时性(后期还将接入大数据平台) 。
-                数据处理程序采用的是Spring的任务调度模块（也就是轻量级的Quartz），并使用开源项目<a target="_blank" href="https://github.com/xuxueli/xxl-job/"> XXL-JOB</a>进行任务调度。
+            <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;由于地税业务与国税是相互独立的，所以需要调用地税的WebService接口，并且登录地税必须发送短信验证码。不能满足产品要求(一次登录，全程授权)，因此，开发了一套保持地税Session不过期的定时任务系统
             </p>
         </div>
     </li>
@@ -36,16 +35,7 @@
         <div class="layui-timeline-content layui-text">
             <h2 class="layui-timeline-title">项目职责</h2>
             <p>
-                项目一期工程负责编码，二期负责项目需求分析，项目搭建，登录模块和处理程序的编写工作。
-            </p>
-        </div>
-    </li>
-    <li class="layui-timeline-item">
-        <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-        <div class="layui-timeline-content layui-text">
-            <h2 class="layui-timeline-title">其他</h2>
-            <p>
-                项目中遇到的困难：由于该项目是进入公司接收的第一个项目，困难大都集中在业务理解度尚浅，还有就是数据量庞大，统计聚合慢，至今仍没有满意的解决方案。
+                负责项目需求分析，项目设计和搭建，并承担核心模块开发（登录、权限、异常处理、日志处理、定时任务程序、工具类等）
             </p>
         </div>
     </li>
