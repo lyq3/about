@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>税收管理平台详情页面</title>
+    <title>龙泉国税微信管理平台详情页面</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
 </head>
 <body style="margin: 10px">
@@ -12,11 +12,10 @@
         <div class="layui-timeline-content layui-text">
             <h2 class="layui-timeline-title">项目介绍</h2>
             <p>
-                <ul><li>税收管理平台：</li></ul>
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;该项目是四川省国家税务局为统计和监控全省税收而开发，包括各税种的统计、疑点数据监控、各地市州数据上报汇总等功能。
-                <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统采用传统的SSM框架开发，前端采用EasyUI + Ztree + layer 等插件，兼容IE8
-            <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;统计数据量上亿，做聚合运算查询时间缓慢，所以本系统附带还开发有一套数据处理系统将数据进行固化提高数据查询速度，并牺牲了查询的及时性(后期还将接入大数据平台) 。
-                数据处理程序采用的是Spring的任务调度模块（也就是轻量级的Quartz），并使用开源项目<a target="_blank" href="https://github.com/xuxueli/xxl-job/"> XXL-JOB</a>进行任务调度。
+                <ul><li>微信企业号管理平台：</li></ul>
+                <br>&nbsp;&nbsp;&nbsp;&nbsp;该项目是龙泉国税为提高税局与企业交流互动的高效性、及时性、便利性而开发的微信项目。
+                <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统采用SpringBoot提高项目搭建效率，前端使用MVVM框架Avalon提高数据操作的便利性，并且兼容IE8，UI库采用BootStrap，
+            <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;本地通讯录名单与微信服务器的通讯录同步问题，由于业务的特殊性不能使用微信官方的全量同步，所以采用的是微信的单个同步接口增加了代码量和同步效率 。
             </p>
         </div>
     </li>
