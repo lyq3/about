@@ -15,6 +15,8 @@
                 <ul><li>税收管理平台：</li></ul>
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;该项目是四川省国家税务局为统计和监控全省税收而开发，包括各税种的统计、疑点数据监控、各地市州数据上报汇总等功能。
                 <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统采用传统的SSM框架开发，前端采用EasyUI + Ztree + layer 等插件，兼容IE8
+            <br/>项目采用统一异常处理(@ControllerAdvice)，使用自定义注解和Spring AOP 配合进行日志记录。并使用自定义异常将业务异常进行封装，使用统一类返回统一的JSON数据(RESTful风格)
+
             <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;统计数据量上亿，做聚合运算查询时间缓慢，所以本系统附带还开发有一套数据处理系统将数据进行固化提高数据查询速度，并牺牲了查询的及时性(后期还将接入大数据平台) 。
                 数据处理程序采用的是Spring的任务调度模块（也就是轻量级的Quartz），并使用开源项目<a target="_blank" href="https://github.com/xuxueli/xxl-job/"> XXL-JOB</a>进行任务调度。
             </p>

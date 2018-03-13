@@ -15,6 +15,7 @@
                 <ul><li>微信企业号管理平台：</li></ul>
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;该项目是龙泉国税为提高税局与企业交流互动的高效性、及时性、便利性而开发的微信项目。
                 <br/>&nbsp;&nbsp;&nbsp;&nbsp;系统采用SpringBoot提高项目搭建效率，前端使用MVVM框架Avalon提高数据操作的便利性，并且兼容IE8，UI库采用BootStrap，
+            <br/>项目采用统一异常处理(@ControllerAdvice)，使用自定义注解和Spring AOP 配合进行日志记录。并使用自定义异常将业务异常进行封装，使用统一类返回统一的JSON数据(RESTful风格)
             <br><ul><li>系统难点：</li></ul><br>&nbsp;&nbsp;&nbsp;&nbsp;本地通讯录名单与微信服务器的通讯录同步问题，由于业务的特殊性不能使用微信官方的全量同步，所以采用的是微信的单个同步接口增加了代码量和同步效率 。
             </p>
         </div>
